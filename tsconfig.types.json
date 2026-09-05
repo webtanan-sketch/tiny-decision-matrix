@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "outDir": "./dist-types",
+    "rootDir": "."
+  },
+  "include": [
+    "module.manifest.ts",
+    "src/components/**/*.tsx",
+    "src/domain/**/*.ts",
+    "src/module/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.test.ts",
+    "node_modules",
+    "dist",
+    "dist-module",
+    "dist-types"
+  ]
+}

@@ -5,15 +5,18 @@
   "type": "module",
   "files": [
     "dist-module",
+    "dist-types",
     "README.md",
     "README.en.md",
     "LICENSE"
   ],
   "main": "./dist-module/tiny-decision-matrix.js",
   "module": "./dist-module/tiny-decision-matrix.js",
+  "types": "./dist-types/src/module/index.d.ts",
   "style": "./dist-module/tiny-decision-matrix.css",
   "exports": {
     ".": {
+      "types": "./dist-types/src/module/index.d.ts",
       "import": "./dist-module/tiny-decision-matrix.js",
       "default": "./dist-module/tiny-decision-matrix.js"
     },
@@ -22,7 +25,8 @@
   "scripts": {
     "dev": "vite",
     "build:app": "vite build",
-    "build:module": "vite build --config vite.module.config.ts",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build:module": "vite build --config vite.module.config.ts && npm run build:types",
     "build": "npm run typecheck && npm run build:app && npm run build:module",
     "prepare": "npm run build:module",
     "preview": "vite preview",

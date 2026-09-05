@@ -5,22 +5,26 @@
   "type": "module",
   "files": [
     "dist-module",
-    "module.manifest.ts",
     "README.md",
     "README.en.md",
     "LICENSE"
   ],
   "main": "./dist-module/tiny-decision-matrix.js",
   "module": "./dist-module/tiny-decision-matrix.js",
+  "style": "./dist-module/tiny-decision-matrix.css",
   "exports": {
-    ".": "./dist-module/tiny-decision-matrix.js",
-    "./manifest": "./module.manifest.ts"
+    ".": {
+      "import": "./dist-module/tiny-decision-matrix.js",
+      "default": "./dist-module/tiny-decision-matrix.js"
+    },
+    "./style.css": "./dist-module/tiny-decision-matrix.css"
   },
   "scripts": {
     "dev": "vite",
     "build:app": "vite build",
     "build:module": "vite build --config vite.module.config.ts",
     "build": "npm run typecheck && npm run build:app && npm run build:module",
+    "prepare": "npm run build:module",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit --pretty false",
     "test": "vitest run",
@@ -29,9 +33,11 @@
   "engines": {
     "node": ">=20.19.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "lucide-react": ">=0.400.0 <1",
-    "react": ">=19 <20",
+    "react": ">=19 <20"
+  },
+  "dependencies": {
     "react-dom": ">=19 <20"
   },
   "devDependencies": {
@@ -39,6 +45,8 @@
     "@types/react": ">=19 <20",
     "@types/react-dom": ">=19 <20",
     "@vitejs/plugin-react": ">=5 <7",
+    "lucide-react": ">=0.400.0 <1",
+    "react": ">=19 <20",
     "tailwindcss": ">=4 <5",
     "typescript": ">=5.8 <7",
     "vite": ">=7 <9",

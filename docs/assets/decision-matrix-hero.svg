@@ -1,0 +1,74 @@
+<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.58" stop-color="#10243E"/>
+      <stop offset="1" stop-color="#16395A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="520" rx="32" fill="url(#bg)"/>
+  <circle cx="1270" cy="60" r="270" fill="#2563EB" opacity="0.08"/>
+  <circle cx="1040" cy="500" r="230" fill="#14B8A6" opacity="0.05"/>
+
+  <g transform="translate(78 88)">
+    <rect width="112" height="112" rx="30" fill="url(#accent)"/>
+    <path d="M31 35h50M56 35v13M38 48h36M38 48l-16 27M74 48l16 27M25 75h26M61 75h26M38 75c0 8-6 14-13 14S12 83 12 75M74 75c0 8-6 14-13 14S48 83 48 75" transform="translate(12 0)" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="222" y="132" fill="#8ED9FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">TinyManager Reference Module</text>
+  <text x="222" y="188" fill="white" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="760" letter-spacing="-2">Decision Matrix</text>
+  <text x="222" y="233" fill="#AFC1D6" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500">Weighted decisions without the spreadsheet noise.</text>
+  <text x="222" y="278" fill="#E1ECF7" font-family="Tahoma, Arial, sans-serif" font-size="22" font-weight="600">تصمیم‌های وزن‌دار، ساده و شفاف</text>
+
+  <g transform="translate(78 355)">
+    <rect width="192" height="44" rx="22" fill="#102F50" stroke="#28577E"/>
+    <circle cx="24" cy="22" r="6" fill="#60A5FA"/>
+    <text x="42" y="28" fill="#E9F4FF" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">Weighted criteria</text>
+    <rect x="210" width="184" height="44" rx="22" fill="#12343D" stroke="#2A5B58"/>
+    <circle cx="234" cy="22" r="6" fill="#2DD4BF"/>
+    <text x="252" y="28" fill="#ECFFFB" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">Live ranking</text>
+    <rect x="412" width="190" height="44" rx="22" fill="#29213F" stroke="#56416C"/>
+    <circle cx="436" cy="22" r="6" fill="#C084FC"/>
+    <text x="454" y="28" fill="#F8EFFF" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600">FA RTL · EN LTR</text>
+  </g>
+
+  <g transform="translate(802 88)">
+    <rect width="520" height="344" rx="24" fill="#0B1628" stroke="#2A415C"/>
+    <rect x="26" y="26" width="468" height="54" rx="14" fill="#10243E"/>
+    <rect x="44" y="46" width="164" height="10" rx="5" fill="#D8E6F5"/>
+    <rect x="375" y="42" width="98" height="18" rx="9" fill="#17365A"/>
+
+    <rect x="26" y="100" width="298" height="218" rx="16" fill="#10243E"/>
+    <rect x="344" y="100" width="150" height="218" rx="16" fill="#10243E"/>
+
+    <g transform="translate(44 122)">
+      <rect width="262" height="42" rx="10" fill="#132B48"/>
+      <rect x="14" y="13" width="84" height="9" rx="4.5" fill="#9CB2C9"/>
+      <rect x="186" y="10" width="58" height="22" rx="8" fill="#163E62"/>
+      <text x="201" y="26" fill="#8ED9FF" font-family="Inter, Arial" font-size="11" font-weight="700">35%</text>
+
+      <rect y="54" width="262" height="42" rx="10" fill="#132B48"/>
+      <rect x="14" y="67" width="102" height="9" rx="4.5" fill="#9CB2C9"/>
+      <rect x="186" y="64" width="58" height="22" rx="8" fill="#163E62"/>
+      <text x="201" y="80" fill="#8ED9FF" font-family="Inter, Arial" font-size="11" font-weight="700">40%</text>
+
+      <rect y="108" width="262" height="42" rx="10" fill="#132B48"/>
+      <rect x="14" y="121" width="92" height="9" rx="4.5" fill="#9CB2C9"/>
+      <rect x="186" y="118" width="58" height="22" rx="8" fill="#163E62"/>
+      <text x="201" y="134" fill="#8ED9FF" font-family="Inter, Arial" font-size="11" font-weight="700">25%</text>
+    </g>
+
+    <g transform="translate(362 122)">
+      <circle cx="57" cy="42" r="35" fill="#3B2C13"/>
+      <path d="M43 39l9 9 19-22" stroke="#FBBF24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="57" y="102" text-anchor="middle" fill="#DDE9F6" font-family="Inter, Arial" font-size="12" font-weight="700">Vendor B</text>
+      <text x="57" y="132" text-anchor="middle" fill="#60A5FA" font-family="Inter, Arial" font-size="27" font-weight="800">7.80</text>
+      <rect x="8" y="157" width="98" height="7" rx="3.5" fill="#24364A"/>
+      <rect x="8" y="157" width="76" height="7" rx="3.5" fill="url(#accent)"/>
+    </g>
+  </g>
+</svg>

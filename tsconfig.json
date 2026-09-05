@@ -16,8 +16,8 @@
     "jsx": "react-jsx",
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-    "types": ["vite/client", "vitest/globals"]
+    "types": ["node", "vite/client", "vitest/globals"]
   },
   "include": ["src", "module.manifest.ts", "vite.config.ts", "vite.module.config.ts"],
-  "exclude": ["dist", "dist-module", "node_modules"]
+  "exclude": ["dist", "dist-module", "dist-types", "node_modules"]
 }

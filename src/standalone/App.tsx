@@ -4,6 +4,7 @@ import { DecisionMatrixWorkspace } from '../components/DecisionMatrixWorkspace';
 import { calculateDecisionMatrix } from '../domain/calculator';
 import { createDefaultDecisionMatrix } from '../domain/defaults';
 import type { DecisionMatrixState, TinyLocale } from '../domain/types';
+import './standalone.css';
 
 const STATE_KEY = 'tiny-decision-matrix.state.v1';
 const LOCALE_KEY = 'tiny-decision-matrix.locale';

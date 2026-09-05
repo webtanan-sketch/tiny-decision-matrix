@@ -1,0 +1,48 @@
+{
+  "name": "tiny-decision-matrix",
+  "version": "0.1.0-alpha.1",
+  "description": "A bilingual weighted decision matrix micro app and TinyManager reference module.",
+  "type": "module",
+  "files": [
+    "dist-module",
+    "module.manifest.ts",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "main": "./dist-module/tiny-decision-matrix.js",
+  "module": "./dist-module/tiny-decision-matrix.js",
+  "exports": {
+    ".": "./dist-module/tiny-decision-matrix.js",
+    "./manifest": "./module.manifest.ts"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:app": "vite build",
+    "build:module": "vite build --config vite.module.config.ts",
+    "build": "npm run typecheck && npm run build:app && npm run build:module",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit --pretty false",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "lucide-react": ">=0.400.0 <1",
+    "react": ">=19 <20",
+    "react-dom": ">=19 <20"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": ">=4 <5",
+    "@types/react": ">=19 <20",
+    "@types/react-dom": ">=19 <20",
+    "@vitejs/plugin-react": ">=5 <7",
+    "tailwindcss": ">=4 <5",
+    "typescript": ">=5.8 <7",
+    "vite": ">=7 <9",
+    "vitest": ">=3 <5"
+  },
+  "license": "MIT"
+}
